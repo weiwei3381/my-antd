@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'antd'
+import Util from '../../utils/utils'
 import './index.less'
 
 export default class Header extends React.Component {
@@ -7,6 +8,12 @@ export default class Header extends React.Component {
     this.setState({
       username: '小熊',
     })
+    setInterval(() => {
+      const sysTime = Util.formatDate(new Date().getTime())
+      this.setState({
+        sysTime,
+      })
+    }, 1000)
   }
   render() {
     return (
@@ -22,7 +29,7 @@ export default class Header extends React.Component {
             首页
           </Col>
           <Col span={20} className="weather">
-            <span className="date">2020年5月1日</span>
+            <span className="date">{this.state.sysTime}</span>
           </Col>
         </Row>
       </div>
