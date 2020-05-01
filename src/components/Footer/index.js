@@ -6,8 +6,8 @@ export default class Footer extends React.Component {
     return (
       <div className="footer">
         <p>
-          🐹 © 2020 研究院 · 基于 Antd 进行开发 ·
-          建议使用chrome/firefox浏览器访问
+          © 2020 研究院 · Designed By Antd · 建议使用chrome/firefox浏览器访问 ·
+          技术支持：小熊
         </p>
       </div>
     )
