@@ -113,8 +113,8 @@ module.exports = function (webpackEnv) {
         options: {
           modules: false,
           modifyVars: {
-            '@font-size-sm': '12px',
-            '@font-size-base': '12px',
+            '@font-size-sm': '13px',
+            '@font-size-base': '13px',
             '@primary-color': '#0070cc',
             '@border-radius-base': '0',
             '@border-radius-sm': '0',

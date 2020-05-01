@@ -6,7 +6,7 @@
     line-height: 60px;
     padding: 0 20px;
     text-align: right;
-
+    font-size: @fontE;
     a {
       margin-left: 40px;
     }
@@ -20,9 +20,22 @@
 
     .breadcrumb-title {
       text-align: center;
+      font-size: @fontD;
+      // 使用&符号进行伪类追加
+      // 生成一个倒三角形
+      &:after {
+        position: absolute;
+        content: '';
+        left: 92px;
+        top: 38px;
+        border-top: 9px solid @colorM;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
     }
 
     .weather {
+      font-size: @fontF;
       text-align: right;
     }
   }
