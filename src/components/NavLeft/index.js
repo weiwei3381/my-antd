@@ -1,12 +1,15 @@
 import React from 'react'
-import { Menu, Icon } from 'antd'
+import { Menu } from 'antd'
 import './index.less'
 import MenuConfig from '../../resource/menuConfig'
 
 const SubMenu = Menu.SubMenu
 
 export default class NavLeft extends React.Component {
-  componentWillMount() {
+  state = {
+    menuTreeNode: null,
+  }
+  componentDidMount() {
     const menuTreeNode = this.renderMenu(MenuConfig)
     this.setState({
       menuTreeNode,

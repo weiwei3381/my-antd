@@ -4,10 +4,10 @@ import Util from '../../utils/utils'
 import './index.less'
 
 export default class Header extends React.Component {
-  componentWillMount() {
-    this.setState({
-      username: '小熊',
-    })
+  state = {
+    username: '小熊',
+  }
+  componentDidMount() {
     setInterval(() => {
       const sysTime = Util.formatDate(new Date().getTime())
       this.setState({
